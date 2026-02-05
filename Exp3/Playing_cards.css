@@ -1,0 +1,40 @@
+body {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+}
+
+/* Playing cards container */
+#playing-cards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+/* Individual card */
+.card {
+  width: 150px;
+  height: 220px;
+  border: 2px solid black;
+  border-radius: 8px;
+  padding: 10px;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Card sections */
+.left {
+  align-self: flex-start;
+}
+
+.middle {
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.right {
+  align-self: flex-end;
+}

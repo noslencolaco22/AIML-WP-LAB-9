@@ -1,0 +1,65 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  padding: 20px;
+}
+
+/* Newspaper Grid Layout */
+.newspaper-layout {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto 1fr 1fr 1fr;
+  grid-template-areas:
+    "title title title"
+    "feature-article feature-article cover-image"
+    "secondary-article secondary-article cover-image"
+    "small-article1 small-article2 small-article3";
+  gap: 20px;
+}
+
+/* Grid areas */
+.title {
+  grid-area: title;
+}
+
+.feature-article {
+  grid-area: feature-article;
+}
+
+.cover-image {
+  grid-area: cover-image;
+}
+
+.secondary-article {
+  grid-area: secondary-article;
+}
+
+.small-article1 {
+  grid-area: small-article1;
+}
+
+.small-article2 {
+  grid-area: small-article2;
+}
+
+.small-article3 {
+  grid-area: small-article3;
+}
+
+/* General styling */
+header,
+article,
+figure {
+  border: 2px solid black;
+  padding: 15px;
+}
+
+/* Image handling */
+.cover-image img {
+  max-width: 100%;
+  display: block;
+}
